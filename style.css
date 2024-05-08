@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #4a98f7;
+}
+
+/* background: white; */
+/* background: #ffffff; */
+/* white = #ffffff  */
+
+header {
+  background: #ffffff;
+  padding: 50px;
+  text-align: center;
+}
+
+/* background: black; */
+/* background: #000000; */
+/* black = #000000  */
+
+footer {
+  background: #000000;
+  color: #ffffff;
+}
