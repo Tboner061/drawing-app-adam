@@ -145,6 +145,72 @@ section {
   justify-content: space-between;
 }
 
+.colors .option {
+  position: relative;
+  margin-top: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.colors .option:nth-child(1) {
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+}
+
+.colors .option:nth-child(2) {
+  background-color: #000;
+  border: 1px solid #bfbfbf;
+}
+
+.colors .option:nth-child(3) {
+  background-color: #e02020;
+  border: 1px solid #bfbfbf;
+}
+
+.colors .option:nth-child(4) {
+  background-color: #6dd400;
+  border: 1px solid #bfbfbf;
+}
+
+.colors .option:nth-child(5) {
+  background-color: #4a98f7;
+  border: 1px solid #bfbfbf;
+}
+
+/*
+  — здесь мы напишем стиль для выбранного варианта (selected option),
+  — который будет работать только тогда, когда мы подключим JavaScript
+  — Start
+*/
+
+.colors .option.selected::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #fff;
+  background: inherit;
+  border-radius: inherit;
+  transform: translate(-50%, -50%);
+}
+
+.colors .option:first-child.selected::before {
+  border-color: #ccc;
+}
+
+.option #color-picker {
+  opacity: 0;
+}
+
+/*
+  — здесь мы напишем стиль для выбранного варианта (selected option),
+  — который будет работать только тогда, когда мы подключим JavaScript
+  — End
+*/
+
 label,
 button {
   font-size: 18px;
